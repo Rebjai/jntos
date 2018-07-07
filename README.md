@@ -1,2 +1,2 @@
-# jtos
-Repo para curso junior to senior
+# JTOS
+The greatest company ever created
