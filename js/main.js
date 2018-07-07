@@ -1,13 +1,22 @@
 $(document).ready(function(){
 
 	//Navigation menu scrollTo
-	$('header nav ul li a').click(function(event){
+	$('header div nav ul li a').click(function(event){
 		event.preventDefault();
+		console.log(event);
+		
 		var section = $(this).attr('href');
 		var section_pos = $(section).position();
-
+		console.log(section_pos)
 		if(section_pos){
-			$(window).scrollTo({top:section_pos.top, left:'0px'}, 1000);
+		console.log(section_pos);
+		$(window).scrollTo($(section).position(), 1000)
+		console.log($(window).scrollTo($(section).position(), 1000));
+		
+		
+		
+			
+			
 		}
 		
 	});
